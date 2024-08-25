@@ -22,9 +22,10 @@
 <body>
     <h1>Aprendendo JavaScript no Curso em Vídeo</h1>
     <p>Olá, Mundo!</p>
+    <div id="nome"></div>
     <script>
-        var nome = window.prompt('qual é seu nome?')
-        window.alert('É um grande prazer em te conhecer, ' + nome)
+        var nome = window.prompt('qual é seu nome?');
+        document.getElementById("nome").innerHTML = `É um prazer te conhecer ${nome}`;
     </script>
 </body>
 </html>
