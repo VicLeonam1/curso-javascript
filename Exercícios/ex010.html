@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        .caixa{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--Sistema de multas que guarde a velocidade do carro e mostre a velocidade, se ele foi multado ou não (colocar no final  - > Dirija sempre com cinto de segurança)-->   
+    
+    <h1>Sistemas de multas</h1>
+    <label for="velc">Infome a sua velocidade</label>
+    <input type="number" name="velc" id="velc">Km/h
+    <button id="verif" onclick="verificar()">Verificar</button>
+    <div id="info" class="caixa"></div>
+    <div id="info2" class="caixa"></div>
+    <div id="info3" class="caixa"></div>
+    <script>
+        function verificar(){
+            let vel = Number(document.getElementById('velc').value)
+            let info = document.getElementById('info').innerHTML = `Sua velocidade é igual a <strong>${vel}</strong>Km/h`
+            if(vel > 60){
+                document.getElementById('info2').innerHTML = `Você ultrapassou o limite de velocidade, <strong>MULTADO!!!</strong>`
+            } else {
+                document.getElementById('info2').innerHTML = `Você está dentro do limite de velocidade`
+            }
+            document.getElementById('info3').innerHTML = `Dirija com segurança`
+        }
+    </script>
+</body>
+</html>
