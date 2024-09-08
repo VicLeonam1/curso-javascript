@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(96, 223, 223);
+}
+
+#hora{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+header > h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+}
+
+main{
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+
+}
+img{
+    display: block;
+    margin: auto;
+    padding: 70px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer > p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    
+}
