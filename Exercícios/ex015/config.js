@@ -10,7 +10,7 @@ function verificar(){
     
     if(masc.checked && anonasc != "" ){
         info.style.display = 'block'
-        info.style.color = 'blue'
+        info.strong.style.color = 'blue'
         let imagem = document.getElementById('imagem')
         if(idade < 13){
             info.innerHTML = `Você é uma criança do sexo <strong>masculino</strong> de ${idade} anos de idade`
