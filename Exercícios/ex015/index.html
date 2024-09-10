@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hora do dia</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de idade</h1>
+    </header>
+    <main>
+      <form>
+        
+        <!--Colocar ano de nascimento-->
+        <label for="anonasc">Ano de nascimento:</label>
+        <input type="number" name="anonasc" id="anonasc" /> <br />
+
+        <!--Check boxes-->
+        <fieldset id="check">
+            Sexo:
+            <input type="radio" name="sexo" id="m"/>
+            <label for="m">Masculino</label>
+            <input type="radio" name="sexo" id="f"/>
+            <label for="f">Feminino</label>
+        </fieldset>
+        
+
+        
+    </form>
+    
+    <!--Botão de verificação-->
+    <button id="verif" onclick="verificar()">Verificar</button>
+
+      <!--texto de informações-->
+      <p id="info"></p>
+
+      <!--imagens-->
+      <img src="" alt="imagem" id="imagem" />
+      
+    </main>
+    <footer>
+      <p>@Curso em vídeo</p>
+    </footer>
+
+    <script src="config.js"></script>
+  </body>
+</html>
