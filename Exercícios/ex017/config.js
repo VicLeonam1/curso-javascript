@@ -1,5 +1,4 @@
 function contar() {
-    let texto = document.getElementById('texto').innerHTML = `Preparando pra contagem`
     let ini = document.getElementById("ini").value
     let fim = document.getElementById("fim").value
     let pass = Number(document.getElementById("pass").value)
@@ -20,7 +19,6 @@ else {
         }
         
         result += "FIM";
-    document.getElementById('texto').innerHTML = `Preparando pra contagem`
     document.getElementById("info").innerHTML = result;
   }
 }
