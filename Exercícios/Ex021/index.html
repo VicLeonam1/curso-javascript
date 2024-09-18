@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Analisador de números</title>
+  </head>
+  <body>
+    <header>
+      <h1>Analisador de números</h1>
+    </header>
+    <main>
+      <section>
+        <form>
+          <label for="num">Insira um numero de 1 a 100</label>
+          <input type="number" name="num" id="num" />
+        </form>
+        <button onclick="inserir()" id="inserir">Inserir</button>
+        <select name="numlist" id="numlist" size="10"></select>
+        <button onclick="verificar()" id="verificar">Verificar</button>
+        <p id="info0" class="info"></p>
+        <p id="info2" class="info"></p>
+        <p id="info1" class="info"></p>
+        <p id="info3" class="info"></p>
+      </section>
+    </main>
+    <footer>
+      <p>@Curso em Video</p>
+    </footer>
+
+    <script src="config.js"></script>
+  </body>
+</html>
